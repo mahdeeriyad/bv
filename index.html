@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BengalVerse | Infinite Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">BengalVerse</div>
+        <div class="controls">
+            <button id="fullscreenBtn" aria-label="Fullscreen">⛶</button>
+            <button id="soundBtn" aria-label="Toggle Sound">🔊</button>
+            <button id="infoBtn" aria-label="Info">ℹ</button>
+        </div>
+    </header>
+
+    <canvas id="bengalCanvas"></canvas>
+
+    <div id="ui-bottom">
+        <div id="scene-title">Scene: Earth</div>
+        <div class="progress-bar"><div id="progress"></div></div>
+    </div>
+
+    <div id="info-panel" class="hidden">
+        <h2 id="panel-title">Title</h2>
+        <p id="panel-desc">Description goes here.</p>
+        <button onclick="document.getElementById('info-panel').classList.add('hidden')">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
